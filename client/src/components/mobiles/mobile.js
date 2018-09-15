@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './mobile.css';
 
 class Mobile extends Component {
@@ -10,10 +11,10 @@ class Mobile extends Component {
     }
 
     componentDidMount() {
-        fetch('/api/catalog')
-            .then(res => res.json())
-            .then(catalog => this.setState({ catalog }, () => console.log('Catalog fetched ...', catalog)))
+        axios.get('/api/catalog')
+            .then(response => this.setState({ catalog: response.data }, () => console.log('Catalog fetched ...', response.data)))
     }
+
 
     render() {
         return (
@@ -22,6 +23,7 @@ class Mobile extends Component {
                 <ul>{this.state.catalog.map(mobile =>
                     <li key={mobile.id}>
                         <h5>{mobile.name}</h5>
+                        <img src={mobile.image} alt={mobile.name} object-fit='contain'></img>
                         <p>{mobile.weight}</p>
                         <p>{mobile.sim}</p>
                         <p>{mobile.os}</p>
