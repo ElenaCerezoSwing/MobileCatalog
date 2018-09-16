@@ -4,7 +4,8 @@ import { showMoreDetails } from './mobiles'
 
 const rootReducer = combineReducers({
     mobile: showMobiles,
-    visibility: showMoreDetails
+    visibility: showMoreDetails,
+
 });
 
 

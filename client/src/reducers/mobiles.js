@@ -3,13 +3,14 @@ import { SHOW_DETAILS } from '../actions'
 
 const initialState = {
     list: [],
-    hidden: true
+    hidden: true,
+    loading: true
 }
 
 export function showMobiles(state = initialState, action) {
     switch (action.type) {
         case SHOW_MOBILES:
-            return Object.assign({}, state, { list: action.payload })
+            return Object.assign({}, state, { list: action.payload, loading: !state.loading })
         default:
             return state
 
@@ -19,7 +20,7 @@ export function showMobiles(state = initialState, action) {
 export function showMoreDetails(state = initialState, action) {
     switch (action.type) {
         case SHOW_DETAILS:
-            return Object.assign({}, state, { hidden: !state.hidden })
+            return Object.assign({}, state, { hidden: action.payload })
         default:
             return state
     }
