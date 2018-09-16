@@ -19,7 +19,6 @@ class Mobile extends Component {
     render() {
         return (
             <div className="mobileCard" >
-                <h4>Mobile Catalog</h4>
                 <ul>{this.state.catalog.map(mobile =>
                     <li key={mobile.id}>
                         <h5>{mobile.name}</h5>

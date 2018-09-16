@@ -6,7 +6,7 @@ app.get("/api/catalog", (req, res) => {
         {
             id: 1,
             name: "iPhone 7",
-            image: "",
+            image: "https://static.phonehouse.es/res/autoimg/34759_spc_450_450_qhigh_product.jpg",
             weight: "128 g",
             sim: "Nano Sim",
             os: "iOS 12",
@@ -15,7 +15,7 @@ app.get("/api/catalog", (req, res) => {
         {
             id: 2,
             name: "Samsung Galaxy S7",
-            image: "",
+            image: "https://static.phonehouse.es/res/autoimg/33563_spc_450_450_qhigh_product.jpg",
             weight: "152 g",
             sim: "Nano Sim",
             os: "Android",

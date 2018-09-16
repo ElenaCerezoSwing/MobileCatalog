@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently\" npm run server\" \"npm run client"
   },
   "author": "Elena Cerezo Ibáñez",
   "license": "MIT",
@@ -14,6 +16,7 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "nodemon": "^1.18.4"
   }
 }
