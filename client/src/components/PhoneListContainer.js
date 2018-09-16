@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PhoneDetailComponent from './PhoneDetailComponent'
 import { connect } from "react-redux";
 import { showMobiles } from "../actions";
+import { showMoreDetails } from "../actions";
 
 class PhoneListContainer extends Component {
 
@@ -9,10 +10,14 @@ class PhoneListContainer extends Component {
         this.props.showMobiles();
     }
 
+    onHandleClick = () => {
+        this.props.showMoreDetails();
+    }
+
     renderMobileItems() {
         return this.props.catalog.map(mobile => {
             return (
-                <li key={mobile.id} >
+                <li key={mobile.id} onClick={this.onHandleClick}>
                     <h5>{this.props.name}</h5>
                     <img src={mobile.image} alt={mobile.name} object-fit='contain'></img>
                     <PhoneDetailComponent
@@ -38,11 +43,12 @@ class PhoneListContainer extends Component {
 
 function mapStateToProps(state) {
     return {
-        catalog: state.mobile.list
+        catalog: state.mobile.list,
+        hidden: state.visibility.hidden
     };
 }
 
-export default connect(mapStateToProps, { showMobiles })(PhoneListContainer);
+export default connect(mapStateToProps, { showMobiles, showMoreDetails })(PhoneListContainer);
 
 
 

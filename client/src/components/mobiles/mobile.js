@@ -6,7 +6,8 @@ class Mobile extends Component {
     constructor() {
         super()
         this.state = {
-            catalog: []
+            catalog: [],
+
         }
     }
 

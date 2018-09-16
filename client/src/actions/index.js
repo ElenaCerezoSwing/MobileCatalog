@@ -1,5 +1,6 @@
 import axios from "axios";
 export const SHOW_MOBILES = "SHOW_MOBILES";
+export const SHOW_DETAILS = "SHOW_DETAILS"
 
 export function showMobiles() {
     return (dispatch, getState) => {
@@ -8,5 +9,11 @@ export function showMobiles() {
         });
     }
 }
+
+export function showMoreDetails() {
+    return ({ type: SHOW_DETAILS, hidden: false })
+}
+
+
 
 
