@@ -3,7 +3,7 @@ import { SHOW_DETAILS } from '../actions'
 
 const initialState = {
     list: [],
-    hidden: true,
+    // hidden: [],
     loading: true
 }
 
