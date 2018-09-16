@@ -6,8 +6,8 @@ class Spinner extends Component {
     render() {
         return (
 
-            <svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#000099">
-                <g fill="#456789" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+            <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" stroke="#40cae0">
+                <g fill="#2478b4" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                     <circle cx="22" cy="22" r="6" stroke-opacity="0">
                         <animate attributeName="r"
                             begin="1.5s" dur="3s"

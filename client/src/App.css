@@ -57,3 +57,11 @@ img {
   color: #40cae0;
 
 }
+
+.header-title {
+  display: flex;
+  margin: 0;
+  height: 100px;
+  align-items: center;
+  padding-left: 30px;
+}
