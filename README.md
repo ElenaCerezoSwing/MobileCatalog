@@ -33,3 +33,6 @@ npm start
 
 ### NOTA IMPORTANTE:
 El localhost:3000 debe no estar siendo utilizado para poder lanzar la aplicación sobre él
+
+Autora: [Elena Cerezo Ibáñez](https://github.com/ElenaCerezoSwing/) , Front-End Developer
+
