@@ -49,7 +49,7 @@ class PhoneListContainer extends Component {
 function mapStateToProps(state) {
     return {
         catalog: state.mobile.list,
-        hidden: state.visibility.hidden,
+        // hidden: state.visibility.hidden,
         loading: state.mobile.loading
     };
 }

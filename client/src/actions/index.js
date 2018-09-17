@@ -13,7 +13,7 @@ export function showMobiles() {
 export function showMoreDetails(event) {
     return (dispatch, getState) => {
         const phoneCards = event.querySelector(".mobile-details").classList.toggle('hidden')
-        dispatch({ type: SHOW_DETAILS, payload: phoneCards });
+        dispatch({ type: SHOW_DETAILS });
     };
 }
 

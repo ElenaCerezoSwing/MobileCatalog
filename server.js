@@ -10,7 +10,8 @@ app.get("/api/catalog", (req, res) => {
             weight: "128 g",
             sim: "Nano Sim",
             os: "iOS 12",
-            price: "500 €"
+            price: "500 €",
+            visible: false
         },
         {
             id: 2,
@@ -19,7 +20,8 @@ app.get("/api/catalog", (req, res) => {
             weight: "152 g",
             sim: "Nano Sim",
             os: "Android",
-            price: "230 €"
+            price: "230 €",
+            visible: false
         }
     ];
 

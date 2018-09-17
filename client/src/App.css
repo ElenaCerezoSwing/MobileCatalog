@@ -65,3 +65,21 @@ img {
   align-items: center;
   padding-left: 30px;
 }
+
+.footer-mobile-catalog{
+  background-color: #2478b4;
+  color: #40cae0;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.footer-mobile-catalog-link{
+  color: #40cae0;
+     text-decoration: none;
+     font-size: 20px;
+   }
