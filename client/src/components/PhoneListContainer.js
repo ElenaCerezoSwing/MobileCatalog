@@ -37,7 +37,7 @@ class PhoneListContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className='main-container'>
                 {this.props.loading ? <Spinner /> : null}
                 <ul>{this.renderMobileItems()}</ul>
             </div>

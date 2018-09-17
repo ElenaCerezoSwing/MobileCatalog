@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -55,7 +59,10 @@ img {
   background-color: #2478b4;
   margin: 0;
   color: #40cae0;
-
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
 }
 
 .header-title {
@@ -82,4 +89,18 @@ img {
   color: #40cae0;
      text-decoration: none;
      font-size: 20px;
+     padding-left:5px;
    }
+
+.spinner-catalog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.main-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

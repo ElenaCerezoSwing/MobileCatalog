@@ -12,10 +12,10 @@ class PhoneDetailComponent extends Component {
 
             <div className={`mobile-details ${details}`} >
 
-                <p>{this.props.weight}</p>
-                <p>{this.props.sim}</p>
-                <p>{this.props.os}</p>
-                <p>{this.props.price}</p>
+                <p className='mobile-details-text'>{this.props.weight}</p>
+                <p className='mobile-details-text'>{this.props.sim}</p>
+                <p className='mobile-details-text'>{this.props.os}</p>
+                <p className='mobile-details-text'>{this.props.price}</p>
 
             </div >
         );

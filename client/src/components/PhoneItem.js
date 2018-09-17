@@ -9,9 +9,9 @@ class PhoneItem extends Component {
     render() {
 
         return (
-            <li onClick={this.props.onClick}>
-                <h5>{this.props.name}</h5>
-                <img src={this.props.image} alt={this.props.name} object-fit='contain'></img>
+            <li className="phoneitem-li-container" onClick={this.props.onClick}>
+                <h5 className="mobile-name">{this.props.name}</h5>
+                <img className='mobile-image' src={this.props.image} alt={this.props.name} object-fit='contain'></img>
 
                 <PhoneDetailComponent
                     weight={this.props.weight}
