@@ -14,6 +14,7 @@ class PhoneItem extends Component {
                 <img className='mobile-image' src={this.props.image} alt={this.props.name} object-fit='contain'></img>
 
                 <PhoneDetailComponent
+                    name={this.props.name}
                     weight={this.props.weight}
                     sim={this.props.sim}
                     os={this.props.os}

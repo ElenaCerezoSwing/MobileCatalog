@@ -39,7 +39,7 @@ class PhoneListContainer extends Component {
         return (
             <div className='main-container'>
                 {this.props.loading ? <Spinner /> : null}
-                <ul>{this.renderMobileItems()}</ul>
+                <ul className="phoneitem-ul-container">{this.renderMobileItems()}</ul>
             </div>
         );
     }
