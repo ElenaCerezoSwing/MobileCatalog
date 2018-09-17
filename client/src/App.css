@@ -59,17 +59,14 @@
   padding-left: 30px;
 }
 .spinner-catalog{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
  
 }
 .main-container {
   display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-bottom: 250px;
+  flex-direction: column;
 }
 
 
@@ -81,6 +78,7 @@
     padding: 100px;
     grid-template-columns: repeat(2, 1fr);
   }
+  
 }
 
 
