@@ -36,3 +36,12 @@ El localhost:3000 debe no estar siendo utilizado para poder lanzar la aplicació
 
 Autora: [Elena Cerezo Ibáñez](https://github.com/ElenaCerezoSwing/) , Front-End Developer
 
+
+# NOTA IMPORTANTE 2:
+
+Ahora que está dockerizado, el server se ejecuta con el siguiente comando:
+
+```
+sudo docker run -it -p 8000:5000 docker-react-express2 
+```
+
