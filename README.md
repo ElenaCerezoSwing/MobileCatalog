@@ -17,7 +17,7 @@ node -v
 git clone https://github.com/ElenaCerezoSwing/MobileCatalog.git
 ```
 
-#### Instalar npm
+#### Instalar npm, tanto en la carpeta general como en la carpeta client
 ```
  npm install 
 ```
