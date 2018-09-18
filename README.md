@@ -14,7 +14,7 @@ node -v
 #### Descargar el repositorio
 
 ```
-git clone https://github.com/KairosDS/Kelvin.git
+git clone https://github.com/ElenaCerezoSwing/MobileCatalog.git
 ```
 
 #### Instalar npm
